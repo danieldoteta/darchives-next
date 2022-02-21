@@ -1,62 +1,32 @@
-import fs from 'fs'
-import path from 'path'
-import Head from 'next/head'
-import matter from 'gray-matter'
-import Post from '../components/Post'
+export default function Home() {
 
-export default function Home({ posts }) {
-  console.log(posts)
   return (  
+
     <div>
-      <Head>
-        <title>Daniel Eta</title>
-      </Head>
+        <img className="black-1" src="images/black-block.png" />
+        <img className="grey-1" src="images/grey-block.png" />
+        <img className="black-2" src="images/black-block.png" />
+        <img className="grey-2" src="images/grey-block.png" />
 
-      <div className="project-container">
-        <div className="top">
-          <h1>Writing</h1>
 
-          <p className="about-p">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-          </p>
-
-          <input className="search-field" type="text" placeholder="search entries" name="" id="">
-          </input>
-
-          {posts.map((post, index) => (
-            <Post post={post} />
-
-          ))}
-
+        <div className="me-container">
+            <div className="about-me">
+                <img src="images/me.png" alt="" />
+                <h1><b>Daniel Eta</b></h1>
+                <small>
+                    <a href="mailto:daniel.eta@outlook.com">daniel.eta@outlook.com</a>  
+                </small>
+                <p>Hi there, I am Daniel, a self-taught developer with a passion for innovative technologies. I started coding in 2017 and although I frequently find myself developing robust web-applications with Django, I love to spend time doing research on machine learning and it's implications. I frequently try to diversify and learn as much as I can in this ever-changing tech world. When I'm not writing software, I like to write about topics like sports, politics or even personal development.🤠
+                </p>
+                <span>
+                    <a href="https://www.twitter.com/onyedikachiiii">TW</a>
+                    <a href="">-</a>
+                    <a href="https://www.github.com/danieldoteta">GH</a>
+                    <a href="">-</a>
+                    <a href="https://www.linkedin.com/in/daniel-eta/">LI</a>
+                </span>
+            </div>
         </div>
-      </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  // gets files from the post directory
-  const files = fs.readdirSync(path.join('posts'))
-
-  console.log(files)
-
-  // get slug
-  const posts = files.map(filename =>{
-    const slug = filename.replace('.md', '')
-
-    const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
-
-    const {data:frontmatter} = matter(markdownWithMeta)
-
-    return {
-      slug,
-      frontmatter
-    }
-  })
-
-  return {
-    props: {
-      posts,
-    },
-  }
 }

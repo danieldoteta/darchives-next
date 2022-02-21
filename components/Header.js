@@ -21,7 +21,7 @@ export default function Header() {
                         <li>-</li>
 
                         <li>
-                            <Link style={ linkStyles }  href='/'>
+                            <Link style={ linkStyles }  href='/blog'>
                                 <p style={ linkStyles }>Writing</p>
                             </Link>
                         </li>
