@@ -29,7 +29,7 @@ export default function Header() {
                         <li>-</li>
 
                         <li>
-                            <Link style={ linkStyles }  href='/'>
+                            <Link style={ linkStyles }  href='/projects'>
                                 <p style={ linkStyles }>Projects</p>
                             </Link>
                         </li>
