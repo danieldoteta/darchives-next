@@ -24,7 +24,7 @@ export default function Home({ posts }) {
           </input>
 
           {posts.map((post, index) => (
-            <Post post={post} />
+            <Post key={index} post={post} />
 
           ))}
 

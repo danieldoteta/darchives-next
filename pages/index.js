@@ -16,7 +16,7 @@ export default function Home() {
                 <small>
                     <a href="mailto:daniel.eta@outlook.com">daniel.eta@outlook.com</a>  
                 </small>
-                <p>Hi there, I am Daniel, a self-taught developer with a passion for innovative technologies. I started coding in 2017 and although I frequently find myself developing robust web-applications with Django, I love to spend time doing research on machine learning and it's implications. I frequently try to diversify and learn as much as I can in this ever-changing tech world. When I'm not writing software, I like to write about topics like sports, politics or even personal development.🤠
+                <p>Hi there, I am Daniel, a self-taught developer with a passion for innovative technologies. I started coding in 2017 and although I frequently find myself developing robust web-applications with Django, I love to spend time doing research on machine learning and it&apos;s implications. I frequently try to diversify and learn as much as I can in this ever-changing tech world. When I&apos;m not writing software, I like to write about topics like sports, politics or even personal development.🤠
                 </p>
                 <span>
                     <a href="https://www.twitter.com/onyedikachiiii">TW</a>

@@ -24,7 +24,6 @@ export default function PostPage({ frontmatter: {title, date, cover_image, excer
 
                 <div className="main-text">
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-
                 </div>
 
             </div>
