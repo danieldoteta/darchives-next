@@ -21,7 +21,7 @@ export default function Home({ projects }) {
           </p>
 
           {projects.map((project, index) => (
-            <Project project={project} />
+            <Project key={index} project={project} />
 
           ))}
 

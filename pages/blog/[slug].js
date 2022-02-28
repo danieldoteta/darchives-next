@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PostPage({ frontmatter: {title, date, cover_image, excerpt,}, slug, content }) {
 
@@ -11,7 +12,8 @@ export default function PostPage({ frontmatter: {title, date, cover_image, excer
     return (
         <div className="main-container">
             <div className="up">
-                <img src={cover_image} />
+
+                <img src={cover_image} alt=""></img>
 
                 <div className="about-text">
                     <h1>{title}</h1>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
 
   return (  
@@ -7,11 +9,11 @@ export default function Home() {
         <img className="grey-1" src="images/grey-block.png" />
         <img className="black-2" src="images/black-block.png" />
         <img className="grey-2" src="images/grey-block.png" />
-
-
+        
         <div className="me-container">
             <div className="about-me">
-                <img src="images/me.png" alt="" />
+                <img src="images/me.png" />
+
                 <h1><b>Daniel Eta</b></h1>
                 <small>
                     <a href="mailto:daniel.eta@outlook.com">daniel.eta@outlook.com</a>  

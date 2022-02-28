@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Project({ project }){
     return (
         <div className="item">
-           <img src={project.frontmatter.cover_image} />
+            <img src={project.frontmatter.cover_image} />
+
            <div className="text">
                 <h1 className="title">
                     <Link href="#">

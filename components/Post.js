@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Post({ post }){
     return (
         <div className="item">
-           <img src={post.frontmatter.cover_image} />
+            <img src={post.frontmatter.cover_image} />
+
+        
            <div className="text">
                 <h1 className="title">
                     <Link href={`/blog/${post.slug}`}>

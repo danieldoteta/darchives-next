@@ -13,7 +13,7 @@ export default function Header() {
                 <nav className="navigation">
                     <ul>
                         <li>
-                            <Link href='/'>
+                            <Link href='/' passHref>
                                 <p style={ linkStyles }>Home</p>
                             </Link>
                         </li>
@@ -21,7 +21,7 @@ export default function Header() {
                         <li>-</li>
 
                         <li>
-                            <Link style={ linkStyles }  href='/blog'>
+                            <Link style={ linkStyles }  href='/blog' passHref>
                                 <p style={ linkStyles }>Writing</p>
                             </Link>
                         </li>
@@ -29,7 +29,7 @@ export default function Header() {
                         <li>-</li>
 
                         <li>
-                            <Link style={ linkStyles }  href='/projects'>
+                            <Link style={ linkStyles }  href='/projects' passHref>
                                 <p style={ linkStyles }>Projects</p>
                             </Link>
                         </li>
